@@ -1,25 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { CardText } from './presentation/components/text/Card-text.component';
+import { Layout } from './presentation/components/layout/Layout';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <CardText 
+        title='JOSE'
+        id={1} 
+        paragraph='meu zovo'
+        description='Minhas bola tão de luta'
+      />
+      <CardText 
+        title='Carro'
+        id={2} 
+        paragraph='whatsapp'
+        description='Foge foge'
+      />
+      <CardText 
+        title='Bola'
+        id={3} 
+        paragraph='cacete'
+        description='Corram do mijao'
+      />
+    </Layout>
   );
 }
 
