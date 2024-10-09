@@ -13,11 +13,16 @@
     background-color: #333; 
     height: 80vh;
     flex-direction: column;
-    color: #ffc997;
+    color: #ffffff;
     text-align: center;
-    font-size: 12px;
+    font-size: 20px;
     font-weight: bold;
     justify-content: center;  
+}
+.slogan {
+    font-size: 40px;
+    color: #ffc997;
+    margin-bottom: 40px;
 }
 
 .faixa_b {
@@ -43,6 +48,7 @@
     font-size: 4em;
     font-weight: bold;
     margin-bottom: 20px;
+    text-align: center;
     color: #fff;
     margin-right: 100px;
 }
@@ -59,13 +65,19 @@
 }
 
 .asside_description_bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
     font-size: 4em;
     font-weight: bold;
     margin-bottom: 20px;
+    text-align: center;
     color: #fff;
     margin-left: 100px;
 }
-
+img {
+    width: 400px;
+}
 .phn {
     width: 350px;
 }

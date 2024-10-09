@@ -8,6 +8,16 @@
     z-index: 1000;
     font-weight: bold;
 }
+a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #b63b0c;
+}
+a:hover {
+    color: #eb6a0e;
+    transform: scale(1.1);
+    transition: .1s;
+}
 .logo {
     cursor: pointer;
     width: 120px;
@@ -24,11 +34,7 @@ ul {
     justify-content: space-around;
     flex: 1;
 }
-li {
-    font-size: 20px;
-    cursor: pointer;
-    color: #b63b0c;
-}
+
 li:hover{
   color: #eb6a0e;
   transform: scale(1.1);

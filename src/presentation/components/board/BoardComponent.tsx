@@ -1,5 +1,5 @@
 import { CardText } from "../card/Card.component"
-import "./Board.css"
+import "./BoardComponent.css"
 
 export const Board = () => {
     return (

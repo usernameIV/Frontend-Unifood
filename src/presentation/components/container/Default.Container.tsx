@@ -3,8 +3,24 @@ import { HiMiniPlus } from "react-icons/hi2";
 import './Default.component.css';
 import { CardText } from "../card/Card.component";
 import { Banner } from "../banner/Banner.component";
+import { Modal } from "../modal/Modal";
+import { useState } from "react";
+import { ItemForm } from "../form/Form";
+
+
 
 export const ContainerItemsScreen = () => {
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const handleOpenModal = () => {
+        setIsModalOpen(true);
+    };
+
+    const handleCloseModal = () => {
+        setIsModalOpen(false);
+    };
+    
     return (
         <div>
             <Banner />
@@ -15,6 +31,7 @@ export const ContainerItemsScreen = () => {
                         <Button 
                             text='Adicionar Item' 
                             icon={HiMiniPlus}
+                            onClick={handleOpenModal}
                         />
                     </div>
                     <div className="rows">
@@ -38,7 +55,7 @@ export const ContainerItemsScreen = () => {
                     />
                     <CardText 
                         name="CupCake" 
-                        imageUrl="https://emporiokaminski.com.br/wp-content/uploads/2024/06/Mini-Cupcake-de-Cenoura-com-Brigadeiro-50g-3.jpg"
+                        imageUrl="https://moinhoglobo.com.br/wp-content/uploads/2016/02/49-cupcake-rosa-scaled.jpg"
                         cents=',90' 
                         value={25}
                     />
@@ -70,6 +87,11 @@ export const ContainerItemsScreen = () => {
                     </div>
                 </div>
             </div>
+            {isModalOpen && (
+                <Modal onClose={handleCloseModal}>
+                    <ItemForm />
+                </Modal>
+            )}
         </div>
     );
 };

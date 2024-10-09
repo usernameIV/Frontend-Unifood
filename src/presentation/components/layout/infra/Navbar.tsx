@@ -8,10 +8,10 @@ export const Navbar = () => {
             <div className="navbar"> 
                     <img src={logo_unifood} alt="" className="logo"/>
                     <ul>
-                        <li>Início</li>
-                        <li>Cardápio</li>
-                        <li>Contato</li>
-                        <li>Sobre</li>
+                        <li><a href="/">Início</a></li>
+                        <li><a href="Items">Cardápio</a></li>
+                        <li><a href="">Contato</a></li>
+                        <li><a href="">Sobre</a></li>
                     </ul>
             </div>       
         </div>  
