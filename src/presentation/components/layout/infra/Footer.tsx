@@ -7,7 +7,7 @@ export const Footer = () => {
         <div className="footer">
             <img src={logo_unifood} alt="Logo Unifood" className="logo" />
             <article>
-                <p className="footer-title">Unifood</p>
+                <p className="footer-title">Unifood.Inc</p>
                 <p>A unifood presa pela qualidade dos alimentos e do atendimento.</p>
                 <p>Contate-nos: Unifood@email.com</p>
             </article>
