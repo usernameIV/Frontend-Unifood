@@ -2,15 +2,12 @@ import { Button } from "../button/Button.component";
 import { HiMiniPlus } from "react-icons/hi2";
 import './Default.component.css';
 import { CardText } from "../card/Card.component";
-import banner from "../../assets/images/banner.png"
+import { Banner } from "../banner/Banner.component";
 
-export const ContainerM = () => {
+export const ContainerItemsScreen = () => {
     return (
         <div>
-            <div className="banner-container">
-                <img src={banner} alt="Banner" className="banner"/>
-            </div>
-            
+            <Banner />
             <div className="father">
                 <div className="container_default">
                     <div className="wrapper-header">

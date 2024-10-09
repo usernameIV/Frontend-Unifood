@@ -1,19 +1,20 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import { ContainerM } from './presentation/components/container/Default.Container';
-import { Layout } from './presentation/components/layout/Layout';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Home } from './pages/Home'; 
+import ItemsScreen from './pages/ItemsScreen';
+import HomeScreen from './pages/HomeScreen';
 
 function App() {
   return (
-    <Router>
-      <Layout>
+    <div>
+      <BrowserRouter>
         <Routes>
-          <Route path="/home" element={<Home />} />
-          <Route path="/" element={<ContainerM />} />
+          <Route index element = {<HomeScreen />} />
+          <Route path="/home" element= {<HomeScreen />} />
+          <Route path="/items" element= {<ItemsScreen />} />
         </Routes>
-      </Layout>
-    </Router>
+      </BrowserRouter>
+    </div>
+      
   );
 }
 

@@ -1,0 +1,160 @@
+.head {
+    width: 100%;
+    justify-content: center;
+}
+
+.faixa_a, .faixa_b, .faixa_c {
+    width: 100%; 
+    display: flex;
+    align-items: center;    
+}
+
+.faixa_a {
+    background-color: #333; 
+    height: 80vh;
+    flex-direction: column;
+    color: #ffc997;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    justify-content: center;  
+}
+
+.faixa_b {
+    background-color: #b63b0c; 
+    height: 110vh; 
+    justify-content: center;
+    overflow-x: hidden;    
+}
+
+.wrapper_middle_center {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sub_wrapper_middle_center > * {
+    width: 500px;
+}
+
+.asside_description {
+    font-size: 4em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+    margin-right: 100px;
+}
+
+.faixa_c {
+    background-color: #ef9a5c; 
+    height: 50vh; 
+    justify-content: center;
+}
+
+.wrapper_bottom_center {
+    display: flex;
+    align-items: center;
+}
+
+.asside_description_bottom {
+    font-size: 4em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+    margin-left: 100px;
+}
+
+.phn {
+    width: 350px;
+}
+
+.title {
+    max-width: 600px;
+}
+
+
+@media (max-width: 1135px) {
+    .faixa_a {
+        height: 70vh;
+    }
+    .faixa_b {
+        height: 90vh;
+    }
+    .faixa_c {
+        height: 40vh;
+    }
+    .sub_wrapper_middle_center > * {
+        width: 400px; 
+    }
+
+    .asside_description, .asside_description_bottom {
+        font-size: 3em;
+        margin-right: 100px;
+        margin-left: 50px;
+    }
+
+    .phn {
+        width: 200px; 
+        display: flex;
+    }
+}
+@media (max-width: 1110px) {
+    .faixa_a {
+        height: 70vh;
+    }
+    .faixa_b {
+        height: 90vh;
+    }
+    .faixa_c {
+        height: 40vh;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .sub_wrapper_middle_center > * {
+        width: 500px; 
+    }
+    .asside_description, .asside_description_bottom {
+        font-size: 3em;
+    }
+
+    .phn {
+        width: 200px; 
+        display: flex;
+    }
+}
+@media (max-width: 780){
+
+}
+@media (max-width: 580) {
+    .faixa_a {
+        height: 70vh;
+    }
+    .faixa_b {
+        height: 90vh;
+    }
+    .faixa_c {
+        height: 40vh;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .sub_wrapper_middle_center > * {
+        width: 500px; 
+    }
+    .asside_description, .asside_description_bottom {
+        font-size: 3em;
+    }
+    .phn {
+        width: 100px; 
+        display: flex;
+    }
+    
+}
+@media (max-width: 490){
+
+}
+
+
